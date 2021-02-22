@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta  http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Glassmorphism Calculator</title>
+	<link rel="stylesheet" type="text/css" href="stylenew.css">
+</head>
+
+<body>
+	<div class="contanier">
+	 <form class="calculator" name="calc">
+		<input type="text" readonly class="value" name="txt" /> 
+	    <span class="num clear" onClick="calc.txt.value = '' ">C</span>
+	    <span class="num" onClick="document.calc.txt.value += '/' ">/</span>
+		<span class="num" onClick="document.calc.txt.value += '*' ">*</span>
+		<span class="num" onClick="document.calc.txt.value += '7' ">7</span>
+		<span class="num" onClick="document.calc.txt.value += '8' ">8</span>
+		<span class="num" onClick="document.calc.txt.value += '9' ">9</span>
+		<span class="num" onClick="document.calc.txt.value += '-' ">-</span>
+		<span class="num" onClick="document.calc.txt.value += '4' ">4</span>
+		<span class="num" onClick="document.calc.txt.value += '5' ">5</span>
+		<span class="num" onClick="document.calc.txt.value += '6' ">6</span>
+        <span class="num plus" onClick="document.calc.txt.value += '+' ">+</span>
+		<span class="num" onClick="document.calc.txt.value += '1' ">1</span>
+		<span class="num" onClick="document.calc.txt.value += '2' ">2</span>
+		<span class="num" onClick="document.calc.txt.value += '3' ">3</span>
+		<span class="num" onClick="document.calc.txt.value += '0' ">0</span>
+		<span class="num" onClick="document.calc.txt.value += '00' ">00</span>
+		<span class="num" onClick="document.calc.txt.value += '.' ">.</span>
+		<span class="num equal" onClick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+
+
+	
+	
+	</form>
+	</div>
+	
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".contanier"), {
+		max: 15,
+		speed: 400,
+		glare: true,
+		"max-glare":0.2,
+	});
+
+</script>
+</body>
+</html>
